@@ -16,12 +16,25 @@
 $servername = "db";
 $username = "root";
 $password = "root";
-$dbname = "cloud";
+$dbname = "opdracht_cloud";
 
 $mysqli = new mysqli($servername, $username, $password, $dbname);
 
 if ($mysqli->connect_error) {
     die("connection error: " . $mysqli->connect_error);
+}
+
+$createTable = "
+CREATE TABLE IF NOT EXISTS contact (
+	id INT AUTO_INCREMENT PRIMARY KEY,
+	name VARCHAR(100) NOT NULL,
+	age INT(3) NOT NULL,
+	email VARCHAR(100) NOT NULL,
+	visit_time DATETIME not null
+)";
+
+if ($mysqli->query($createTable) === false) {
+	die("error creating table: " . $mysqli->error);
 }
 
 date_default_timezone_set('Europe/Brussels');
