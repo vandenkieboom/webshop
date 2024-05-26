@@ -3,11 +3,10 @@ version: '3.8'
 services:
   web:
     build: .
-    container_name: opdracht2_cloud
     ports:
       - "8080:80"
     volumes:
-      - .:/var/www/html
+      - ./index.php:/var/www/html/index.php
     depends_on:
       - db
 
@@ -16,9 +15,7 @@ services:
     container_name: mariadb-db
     environment:
       MYSQL_ROOT_PASSWORD: root
-      MYSQL_DATABASE: cloud
-      MYSQL_USER: steff
-      MYSQL_PASSWORD: root
+      MYSQL_DATABASE: opdracht_cloud
     ports:
       - "3306:3306"
     volumes:
