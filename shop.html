@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/x-icon" href="assets/images/keyboard_3x-removebg-preview.png">
+  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+  <script src="js/shoppingCart.js" defer></script>
+  <script src="js/navScript.js" defer></script>
+  <title>Shop</title>
+</head>
+<body id="shop-grid-container">
+  <header>
+    <button class="hamburger">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </button>
+    <a href="index.html"><img class="logo" src="assets/images/Logowebshop-removebg-preview.png" alt="logo"></a>
+    <nav class="main-nav" id="nav-menu">
+      <a href="index.html">Home</a>
+      <a href="shop.html">Toetsenborden</a>
+			<a href="klanten.html">Klanten</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <figure class="icons">
+			<form id="search-bar" class="show-search-bar" action="#">
+				<button id="submit-button" type="submit"><img src="assets/images/search-square.512x512.png"></button>
+				<input type="search">
+			</form>
+      <img src="assets/images/search-interface-symbol.png" alt="search icon" id="search-icon">
+      <!-- <img src="assets/images/user(2).png" alt="user icon"> -->
+      <img id="cart-icon" src="assets/images/shopping-bag-removebg-preview.png" alt="shopping cart icon">
+    </figure>
+  </header>
+
+  <section class="banner">
+    <img src="assets/images/katharina-gloth-dbgbyzFR8uI-unsplash.jpg" alt="banner image">
+  </section>
+
+  <aside>
+    <section>
+        <h2 id="cart-header">winkelwagen</h2>
+        <p id="total-price">Totaalbedrag: €0.00</p>
+        <br>
+      <ul id="cart-items">
+      </ul>
+      <p id="checkout-text"></p>
+    </section>
+    <section id="sidebar">
+      <p id="message"></p>
+    </section>
+  </aside>
+
+  <main>
+    <section class="shop-flex-container">
+      <article class="product">
+        <a href="productrogazoth.html">
+          <img src="assets/images/asusrogazoth.png" alt="Product">
+          <h2>Asus Rog Azoth</h2>
+          <p class="product-description">Mechanisch Toetsenbord 75%</p>
+        </a>
+        <span class="price">€295,45</span>
+        <button class="product-button"><img src="assets/images/shopping-cart (1).png">in winkelwagen</button>
+        <div class="wishlist-icon">
+          <img src="assets/images/icons8-heart-1001.png" alt="Wishlist">
+        </div>
+      </article>
+
+      <article class="product">
+        <a href="productrogclaymore.html">
+          <img src="assets/images/asusrogclay.png" alt="Product">
+          <h2>Asus Rog Claymore</h2>
+          <p class="product-description">Mechanisch Toetsenbord 100%</p>
+        </a>
+        <span class="price">€230,87</span>
+        <button class="product-button"><img src="assets/images/shopping-cart (1).png">in winkelwagen</button>
+        <div class="wishlist-icon">
+          <img src="assets/images/icons8-heart-1001.png" alt="Wishlist">
+        </div>
+      </article>
+
+      <article class="product">
+        <a href="productwooting.html">
+          <img src="assets/images/wooting.png" alt="Product">
+          <h2>Wooting 60HE</h2>
+          <p class="product-description">Mechanisch Toetsenbord 60%</p>
+        </a>
+        <span class="price">€189.99</span>
+        <button class="product-button"><img src="assets/images/shopping-cart (1).png">in winkelwagen</button>
+        <div class="wishlist-icon">
+          <img src="assets/images/icons8-heart-1001.png" alt="Wishlist">
+        </div>
+      </article>
+
+      <article class="product">
+        <a href="productkeychron.html">
+          <img src="assets/images/keychron-removebg-preview.png" alt="Product">
+          <h2>Keychron Q1</h2>
+          <p class="product-description">Mechanisch Toetsenbord 75%</p>
+        </a>
+        <span class="price">€210,00</span>
+        <button class="product-button"><img src="assets/images/shopping-cart (1).png">in winkelwagen</button>
+        <div class="wishlist-icon">
+          <img src="assets/images/icons8-heart-1001.png" alt="Wishlist">
+       </div>
+      </article>
+
+      <article class="product">
+        <a href="productiqunixzx.html">
+          <img class="product-img" src="assets/images/iqunix-removebg-preview.png" alt="Product">
+          <h2>iQunix ZX75</h2>
+          <p class="product-description">Mechanisch Toetsenbord 96%</p>
+        </a>
+        <span class="price">€185.07</span>
+        <button class="product-button"><img src="assets/images/shopping-cart (1).png">in winkelwagen</button>
+        <div class="wishlist-icon">
+          <img src="assets/images/icons8-heart-1001.png" alt="Wishlist">
+       </div>
+      </article>
+
+      <article class="product">
+        <a href="productwidow.html">
+          <img class="product-img" src="assets/images/razerwidowV4.png" alt="Product">
+          <h2>Razer Widow V4</h2>
+          <p class="product-description">Mechanisch Toetsenbord 100%</p>
+        </a>
+        <span class="price">€270.99</span>
+        <button class="product-button"><img src="assets/images/shopping-cart (1).png">in winkelwagen</button>
+        <div class="wishlist-icon">
+          <img src="assets/images/icons8-heart-1001.png" alt="Wishlist">
+        </div>
+      </article>
+
+      <article class="product">
+        <a href="producthuntsman.html">
+          <img class="product-img" src="assets/images/huntsman-removebg-preview.png" alt="Product">
+          <h2>Razer Huntsman V2</h2>
+          <p class="product-description">Optisch Toetsenbord 80%</p>
+        </a>
+        <span class="price">€150,19</span>
+        <button class="product-button"><img src="assets/images/shopping-cart (1).png">in winkelwagen</button>
+        <div class="wishlist-icon">
+          <img src="assets/images/icons8-heart-1001.png" alt="Wishlist">
+        </div>
+      </article>
+
+      <article class="product">
+        <a href="productcorsairk100.html">
+          <img class="product-img" src="assets/images/corsairk100.png" alt="Product">
+          <h2>Corsair K100 RGB</h2>
+          <p class="product-description">Optisch Toetsenbord 100%</p>
+        </a>
+        <span class="price">€234,90 </span>
+        <button class="product-button"><img src="assets/images/shopping-cart (1).png">in winkelwagen</button>
+        <div class="wishlist-icon">
+          <img src="assets/images/icons8-heart-1001.png" alt="Wishlist">
+        </div>
+      </article>
+
+      <article class="product">
+        <a href="producthyperxalloy.html">
+          <img class="product-img" src="assets/images/hyperxalloyorigins.png" alt="Product">
+          <h2>HyperX Alloy Origins</h2>
+          <p class="product-description">Mechanisch Toetsenbord 100%</p>
+        </a>
+        <span class="price">€120.99</span>
+        <button class="product-button"><img src="assets/images/shopping-cart (1).png">in winkelwagen</button>
+        <div class="wishlist-icon">
+          <img src="assets/images/icons8-heart-1001.png" alt="Wishlist">
+        </div>
+      </article>
+
+      <article class="product">
+        <a href="productapexpro.html">
+          <img class="product-img" src="assets/images/apexpro-removebg-preview.png" alt="Product">
+          <h2>SteelSeries Apex Pro</h2>
+          <p class="product-description">Mechanisch Toetsenbord 100%</p>
+        </a>
+        <span class="price">€210,99</span>
+        <button class="product-button"><img src="assets/images/shopping-cart (1).png">in winkelwagen</button>
+        <div class="wishlist-icon">
+          <img src="assets/images/icons8-heart-1001.png" alt="Wishlist">
+        </div>
+      </article>
+
+      <article class="product">
+        <a href="productduckyshine7.html">
+          <img class="product-img" src="assets/images/duckyshine7.png" alt="Product">
+          <h2>Ducky Shine 7</h2>
+          <p class="product-description">Mechanisch Toetsenbord 100%</p>
+        </a>
+        <span class="price">€187,88</span>
+        <button class="product-button"><img src="assets/images/shopping-cart (1).png">in winkelwagen</button>
+        <div class="wishlist-icon">
+          <img src="assets/images/icons8-heart-1001.png" alt="Wishlist">
+        </div>
+      </article>
+
+      <article class="product">
+        <a href="productannepro.html">
+          <img class="product-img" src="assets/images/annepro.png" alt="Product">
+          <h2>Anne Pro</h2>
+          <p class="product-description">Mechanisch Toetsenbord 60%</p>
+        </a>
+        <span class="price">€80,99</span>
+        <button class="product-button"><img src="assets/images/shopping-cart (1).png">in winkelwagen</button>
+        <div class="wishlist-icon">
+          <img src="assets/images/icons8-heart-1001.png" alt="Wishlist">
+        </div>
+      </article>
+    </section>
+  </main>
+
+	<footer class="footer">
+		<p>
+			<span>
+				&copy; Jordy Van Den Kieboom
+			</span>
+			<span>
+				alle rechten voorbehouden
+			</span>
+		</p>
+
+		<a href="https://twitter.com/vanDevKieboom">
+			<figure>
+				<img src="assets/images/twitter.png" alt="icon twitter">
+				<figcaption>
+          vanDevkieboom
+				</figcaption>
+			</figure>
+		</a>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="icon" type="image/x-icon" href="assets/images/keyboard_3x-removebg-preview.png">
+	<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="js/navScript.js" defer></script>
+  <title>Product</title>
+</head>
+<body>
+  <header>
+    <button class="hamburger">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </button>
+    <a href="index.html"><img class="logo" src="assets/images/Logowebshop-removebg-preview.png" alt="logo"></a>
+    <nav class="main-nav" id="nav-menu">
+      <a href="index.html">Home</a>
+      <a href="shop.html">Toetsenborden</a>
+			<a href="klanten.html">Klanten</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <figure class="icons">
+			<form id="search-bar" class="show-search-bar" action="#">
+				<button id="submit-button" type="submit"><img src="assets/images/search-square.512x512.png"></button>
+				<input type="search">
+			</form>
+      <img src="assets/images/search-interface-symbol.png" alt="search icon" id="search-icon">
+      <!-- <img src="assets/images/user(2).png" alt="user icon"> -->
+      <img id="cart-icon" src="assets/images/shopping-bag-removebg-preview.png" alt="shopping cart icon">
+    </figure>
+  </header>
+
+  <section class="banner">
+    <img src="assets/images/katharina-gloth-dbgbyzFR8uI-unsplash.webp" alt="banner image">
+  </section>
+
+  <main>
+    <section id="product-page-container">
+      <article>
+        <img src="assets/images/keychron.jpg" height="428px">
+      </article>
+
+      <article id="product-article">
+        <h1 id="product-heading">Keychron Q1<br>
+          <span>Mechanisch Toetsenbord</span></h1>
+          <a href="#resizableTextarea">
+            <p id="reviews">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+              <span id="recensies-text">1337 recensies</span>
+            </p>
+          </a>
+                         
+          <p>€210,00</p>
+          <p>gratis verzending</p>
+
+          <label for="colorsKeyboard">Kleur</label><br>
+          <select class="classic" name="colorsKeyboard" id="colorsKeyboard">
+            <option value="White">Donkerrood</option>
+            <option value="Carbon">Paars</option>
+            <option value="Silver">Houtskool</option>
+            <option value="Retro">Beige</option>
+            <option value="Blue">Marineblauw</option>
+          </select>
+            <br>
+          <label for="SwitchKeyboard">Switch</label><br>
+          <select class="classic" name="SwitchKeyboard" id="SwitchKeyboard">
+            <option value="Red">Gateron G Pro Rood</option>
+            <option value="Blue">Gateron G Pro Blauw</option>
+            <option value="Brown">Gateron G Pro Bruin</option>
+          </select>
+            <br>
+            <button id="product-page-button"><img src="/assets/images/shopping-cart (1).png">in winkelwagen</button>
+      </article>
+    </section>
+
+    <section id="product-page-details">
+      <article>
+        <h1>product informatie</h1>
+        <p><strong>Merk:</strong> Keychron</p>
+        <p><strong>Compatibele Apparaten:</strong> Laptop, PC, Mac</p>
+        <p><strong>Verbindingstechnologie:</strong> USB-C</p>
+        <p><strong>Toetsenbord Omschrijving:</strong> Gaming</p>
+        <p><strong>Speciale Kenmerken:</strong> QMK/VIA, Volledig Aanpasbaar, Volledig Aluminium, Hot-swappable</p>
+        <p><strong>Kleur:</strong> Hot-swap Gateron G Pro Brown Switch</p>
+        <p><strong>Besturingssysteem:</strong> Linux, Mac, Windows</p>
+        <p><strong>Ondersteuning voor toetsenbordverlichting:</strong> RGB</p>
+        <p><strong>Afmetingen van het artikel LxBxH:</strong> 328 x 145 x 36 mm</p>
+      </article>
+
+        <section class="review-container">
+          <form action="#">
+            <label for="review">Recensie<span class="spanRed">*</span></label>
+            <p id="reviews">
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star checked"></span>
+              <span class="fa fa-star"></span>
+            </p>
+            <br>
+            <textarea id="resizableTextarea" contenteditable="true" name="review" 
+            placeholder="Schrijf een recensie"></textarea><br>
+
+            <label for="username">Gebruikersnaam<span class="spanRed">*</span></label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="email">E-mail<span class="spanRed">*</span></label>
+            <input type="email" id="email" name="email"
+            placeholder="e-mail@voorbeeld.com" required>
+            <br>
+            <input id="submitBtn" type="submit" value="Verstuur">
+          </form> 
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+		<p>
+			<span>
+				&copy; Jordy Van Den Kieboom
+			</span>
+			<span>
+				alle rechten voorbehouden
+			</span>
+		</p>
+
+		<a href="https://twitter.com/vanDevKieboom">
+			<figure>
+				<img src="assets/images/twitter.png" alt="icon twitter">
+				<figcaption>
+          vanDevkieboom
+				</figcaption>
+			</figure>
+		</a>
+	</footer>
+
+</body>
+</html>

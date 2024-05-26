@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/x-icon" href="assets/images/keyboard_3x-removebg-preview.png">
+  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+  integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script src="js/mapScript.js" defer></script>
+  <script src="js/navScript.js" defer></script>
+  <title>Contact</title>
+</head>
+<body>
+  <header>
+    <button class="hamburger">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </button>
+    <a href="index.html"><img class="logo" src="assets/images/Logowebshop-removebg-preview.png" alt="logo"></a>
+    <nav class="main-nav" id="nav-menu">
+      <a href="index.html">Home</a>
+      <a href="shop.html">Toetsenborden</a>
+			<a href="klanten.html">Klanten</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <figure class="icons">
+			<form id="search-bar" class="show-search-bar" action="#">
+				<button id="submit-button" type="submit"><img src="assets/images/search-square.512x512.png"></button>
+				<input type="search">
+			</form>
+      <img src="assets/images/search-interface-symbol.png" alt="search icon" id="search-icon">
+      <!-- <img src="assets/images/user(2).png" alt="user icon"> -->
+      <img id="cart-icon" src="assets/images/shopping-bag-removebg-preview.png" alt="shopping cart icon">
+    </figure>
+  </header>
+
+  <section class="banner">
+    <img src="assets/images/katharina-gloth-dbgbyzFR8uI-unsplash.webp" alt="banner image">
+  </section>
+
+  <main>
+    <section id="contact">
+      <article class="contact-box">
+        <h1>Contacteer Ons</h1>
+        <p>Neem gerust contact met ons op</p>
+
+        <form id="contact-form" action="#" method="post">
+          <label for="naam">Naam<span class="spanRed">*</span></label>
+          <input type="text" id="naam" name="naam" required>
+
+          <label for="email">E-mail<span class="spanRed">*</span></label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="vraag">Bericht<span class="spanRed">*</span></label>
+          <textarea id="vraag" name="vraag" rows="4" required></textarea>
+
+          <button type="submit">Verstuur</button>
+        </form>
+      </article>
+
+      <article class="map">
+        <div id="map"></div>
+      </article>
+    </section>
+  </main>
+
+	<footer class="footer">
+		<p>
+			<span>
+				&copy; Jordy Van Den Kieboom
+			</span>
+			<span>
+				alle rechten voorbehouden
+			</span>
+		</p>
+
+		<a href="https://twitter.com/vanDevKieboom">
+			<figure>
+				<img src="assets/images/twitter.png" alt="icon twitter">
+				<figcaption>
+          vanDevkieboom
+				</figcaption>
+			</figure>
+		</a>
+	</footer>
+</body>
+</html>
