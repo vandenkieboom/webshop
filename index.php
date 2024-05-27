@@ -25,7 +25,7 @@ if ($mysqli->connect_error) {
 }
 
 $createTable = "
-CREATE TABLE IF NOT EXISTS contact (
+CREATE TABLE IF NOT EXISTS contacts (
 	id INT AUTO_INCREMENT PRIMARY KEY,
 	name VARCHAR(100) NOT NULL,
 	age INT(3) NOT NULL,
