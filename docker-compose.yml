@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   web:
-    build: .
+    image: vandevkieboom/app:latest
     container_name: webshop
     ports:
       - "8080:80"
