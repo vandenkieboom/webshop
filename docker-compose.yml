@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   web:
-    build: .
+    image: vandenkieboom1996/voorbeeldopname
     container_name: webshop
     ports:
       - "8080:80"
