@@ -16,7 +16,7 @@
 $servername = "db";
 $username = "root";
 $password = "root";
-$dbname = "opdracht_cloud";
+$dbname = "webshop_db";
 
 $mysqli = new mysqli($servername, $username, $password, $dbname);
 
